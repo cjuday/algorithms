@@ -3,11 +3,11 @@
 function linear_search($search, $data, $i){
     $result = -1; //index of the result, initially -1
     
-    for($x=0; $x<$i; $x++){
-        if($data[$x]==$search){
-            $result = $x;
-        }
-    }
+    for($x=0; $x<$i; $x++){ //iterating through the loop
+        if($data[$x]==$search){ //checking if the value matches with what we are looking for
+            $result = $x; //update result variable if matched
+        } //end check statement
+    } //end loop
 
     /*completed!
     /*Print the result*/
