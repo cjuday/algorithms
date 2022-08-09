@@ -1,7 +1,7 @@
 <?php
 /*jump search algorithm*/
 //recursion function for searching
-function jumpSearch($arr, $x, $i){
+function intSearch($arr, $x, $i){
     $step = sqrt($i); //block size to be jumped
     $prev = 0; //set initial previous step to 0
     
@@ -30,8 +30,8 @@ function jumpSearch($arr, $x, $i){
 }
 //completed
 
-function jump_search($search, $data, $i){
-    $result = jumpSearch($data, 0, $i, $search);
+function int_search($search, $data, $i){
+    $result = binarySearch($data, 0, $i, $search);
     echo "<b>";
     if($result==-1){
         echo "Element was not present in the array!";
