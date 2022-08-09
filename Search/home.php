@@ -38,4 +38,8 @@ echo linear_search($search,$data,$i);
 //binary search
 echo "<p align='center'><b style='color:red; font-size:22px'><u>Binary Search</b></u></p>";
 echo binary_search($search,$data,$i);
+
+//jump search
+echo "<p align='center'><b style='color:red; font-size:22px'><u>Jump Search</b></u></p>";
+echo jump_search($search,$data,$i);
 ?>
