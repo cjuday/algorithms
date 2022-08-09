@@ -1,5 +1,6 @@
 <?php
 /*binary search algorithm*/
+//recursion function for searching
 function binarySearch($arr, $l, $r, $x){
     if ($r >= $l){
         $mid = ceil($l + ($r - $l) / 2); //calculating middle point of the array
@@ -15,6 +16,7 @@ function binarySearch($arr, $l, $r, $x){
     }
     return -1; //return -1 if not found
 }
+//completed
 
 function binary_search($search, $data, $i){
     $result = binarySearch($data, 0, $i, $search);
